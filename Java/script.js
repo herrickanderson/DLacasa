@@ -13,11 +13,11 @@ $(document).ready(function(){
                
                 flag=true;
 
-                $('header').css({"background-color":"#2D2C31"})
+                $('.navegador1').css({"background-color":"#2D2C31"})
             }
             }else{
                 if(flag){
-                    $('header').css({"background-color":"transparent"})
+                    $('.navegador1').css({"background-color":"transparent"})
                     flag=false;
                 
             }

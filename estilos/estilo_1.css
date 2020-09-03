@@ -424,7 +424,7 @@ body{
 /*nuevo menu probado*/
 .navegador1{
     height: 100px;
-    background:#2D2C31;
+    background:transparent;
     position: fixed;
     width: 100%;
 }
