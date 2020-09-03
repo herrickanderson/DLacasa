@@ -1,0 +1,9 @@
+
+<?php
+$host="lcoalhost";
+$user="root";
+$clave="Adhara2018";
+$bd="bd_restaurant";
+
+$conectar=mysqli_connect($host,$user,$clave,$bd);
+?>
