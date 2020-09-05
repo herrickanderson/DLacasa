@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+   
+}
+
+
+
+.registro{
+    width: 100%;
+    background: #576574;
+    height: 700px;
+  
+   
+   
+   
+}
+
+.menu2{
+    position:fixed;
+ 
+    margin-bottom: 100px;
+    display:block;
+}
+
+
+
+
+.navegador1{
+    height: 100px;
+    background:#2D2C31;
+   
+    width: 100%;
+}
+.navegador1 img{
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 6%;
+  
+}
+.navegador1 ul{
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.navegador1 ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 15px;
+}
+.navegador1 ul li a{
+    position: relative;
+    color: #fff;
+    font-size:18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.navegador1 ul li a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.navegador1 ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 35px;
+    float: right;
+    line-height: 80px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+    transition: all .5s;
+    margin-top: 15px;
+    
+}
+#check{
+    display: none;
+}
+
+.titulo_alitas{
+    display: none;
+}
+
+
+
+#ubicacion_restaurant{
+    border: 2px solid #6EBF3A;
+    margin: 5px 10px;
+}
+#ubicacion_restaurant iframe{
+   margin: 20px 20px;
+    width: 85vw;
+    height: 85vh;
+}
+.footer{
+    background: #2D2C31;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+}
+.footer h2{
+    padding: 20px;
+}
+.footer p{
+    padding: 20px;
+}
