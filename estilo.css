@@ -141,13 +141,16 @@ label #btn,
 label #cancel{
     color: white;
     font-size: 35px;
+    background: #2D2C31 ;
     float: right;
-    line-height: 80px;
-    margin-right: 50px;
+   
     cursor: pointer;
-    display: none;
+   
     transition: all .5s;
-    margin-top: 15px;
+   
+  
+
+    display: none;
     
 }
 #check{
@@ -158,9 +161,7 @@ label #cancel{
 
 
 
-.lbl-menu label:hover{
-    background: #38363d
-}
+
 /*contenido de completo de los radios se coloca en relative para que siempre tenga la misma posicion*/
 .content{
     position: relative;
@@ -435,18 +436,20 @@ label #cancel{
 @media (max-width:990px){
 
     .lbl-menu{
-    
+
+
         grid-template-columns: 95% 5% 0;
         height: 90px;
-       
-
+  
     }
     
     label #btn{
         display: block;
         margin: 0 40px;
+        background: #2D2C31;
         padding: 0;
         
+        left: 100%;
         
         
     }
@@ -463,10 +466,19 @@ label #cancel{
         height: 100vh;
         background: #34333a;
         top: 90px;
-        left: -150%;
+        left: -100%;
         text-align: center;
         transition: all .5s;
         z-index: 1000;
+        cursor: pointer;
+        color: #fff;
+        right: 10px;
+
+      
+        
+    
+        
+
        
     }
     .menu_responsive label{
@@ -493,8 +505,10 @@ label #cancel{
        
     
     }
- 
-
+    .checkbtn i{
+        margin: 0;
+        padding: 0;
+    }
 }
 @media (max-width:860px){
   
@@ -502,14 +516,51 @@ label #cancel{
 
 }
 @media(max-width:750px){
-    
+    .galeria{
+        grid-template-columns: repeat(2,1fr);
+
+   
+    }
+    .tarifas__platos{
+       
+        grid-template-columns: 100%;
+       
+    }
 }
 @media(max-width:680px){
     
   
 }
 @media(max-width:580px){
-  
+    .galeria{
+        grid-template-columns: repeat(1,1fr);
+    
+        }
+        .tarifas__platos{
+           
+            grid-template-columns: 100%;
+           
+        }
+        .modal__contenido{
+            width: 80%;
+         
+    
+        }
+        .modal__contenido img{
+            height: 40%;
+          
+        }
+        #cerrar + label{
+           
+            right: 15%;
+            top: 25%;
+        
+        
+        }
+        .ubicacion_restaurant iframe{
+            max-width: 100%;
+            height: auto;
+        }
     
 }
 
