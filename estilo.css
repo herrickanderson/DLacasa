@@ -107,7 +107,11 @@ body{
 .lbl-menu{
     background: #2D2C31;
     display: grid;
-    grid-template-columns: 50% 50% 0;
+    grid-template-columns: 50% 0 50%;
+
+
+
+  
 }
 /*columna 1 contiene el logo*/
 .lbl-menu img{
@@ -118,7 +122,7 @@ body{
 /* la columna dos contiene el menu de opciones*/
 .lbl-menu label{
     display: inline-block;
-    font-size: 19px;
+    font-size: 20px;
     padding: 10px;
     color: #fff;
     cursor: pointer;
@@ -432,31 +436,34 @@ label #cancel{
 
     .lbl-menu{
     
-        grid-template-columns: 80% 0 20%;
-        height: 100px;
+        grid-template-columns: 95% 5% 0;
+        height: 90px;
+       
 
     }
     
     label #btn{
-        display: inline-block;
-       
-        margin-top: .1px;
+        display: block;
+        margin: 0 40px;
+        padding: 0;
+        
         
         
     }
     label #cancel{
-        margin-top: .00001px;
+        margin: 0 40px;
+        padding: 0;
     }
     
     
     .menu_responsive{
         display: inline-block;
         position: fixed;
-        width: 100%;
+        width: 50%;
         height: 100vh;
         background: #34333a;
-        top: 100px;
-        left: -100%;
+        top: 90px;
+        left: -150%;
         text-align: center;
         transition: all .5s;
         z-index: 1000;
