@@ -2,4 +2,399 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather', serif;
+
 }
+body{
+    background: #a7a5ad;
+}
+
+/*Modal------------------------*/
+/*---------mopdal-------------------*/
+
+.modal_1{
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    animation:modal 2s 1s forwards;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    
+ 
+}
+.modal__contenido{
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    background:#2D2C31;
+    border-radius: 10px;
+}
+#cerrar{
+    display: none;
+}
+
+#cerrar + label{
+    position: fixed;
+    color: #fff;
+    font-size: 20px;
+    z-index: 1001;
+    background: darkred;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  border-radius: 50%;
+    right: 25%;
+    top: 25%;
+    cursor: pointer;
+    animation:modal 2s 1s forwards; 
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+
+}
+#cerrar:checked + label, #cerrar:checked ~ .modal{
+    display: none;
+
+} 
+
+
+@keyframes modal {
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.modal__contenido h2{
+    text-align: center;
+    margin-top: 20px;
+    color: #6EBF3A;
+
+}
+.modal__contenido p{
+    margin: 20px;
+
+    text-align: justify;
+    color: #fff;
+}
+
+.modal__contenido img{
+    height: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+/*--------------------------------------*/
+/*copntenedor contenido de todo*/
+.container{
+    width: 100%;
+    margin: auto;
+   
+}
+/*en el menu, se pone con grid de dos coñlumnas*/
+.lbl-menu{
+    background: #2D2C31;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/*columna 1 contiene el logo*/
+.lbl-menu img{
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+/* la columna dos contiene el menu de opciones*/
+.lbl-menu label{
+    display: inline-block;
+    font-size: 19px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 400ms ease;
+    margin-top: 25px;
+}
+.lbl-menu label:hover{
+    background: #38363d
+}
+/*contenido de completo de los radios se coloca en relative para que siempre tenga la misma posicion*/
+.content{
+    position: relative;
+}
+/*contenido individual de los radios, se podra en absoluto para que desaparezca y aparezca ccuando s ehace clic en cada opcion.*/
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding-top: 3px;
+    background:#fff;
+    padding-bottom:40px ;
+}
+/*se esconde los radios*/
+#radio1,#radio2,#radio3,#radio4,#radio5,#radio6{
+    display: none;
+}
+/*abrimos cada tab de contenido*/
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4,
+#radio5:checked ~ .tab5,
+#radio6:checked ~ .tab6{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  
+}
+
+/*dibujar triangulo -----------------*/
+.content div::after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+
+    bottom: 100%;
+    left: 52%;
+
+}
+
+.content .tab2::after{
+    
+    left: 60%;
+}
+.content .tab3::after{
+    left: 67%;
+}
+.content .tab4::after{
+    left: 74%;
+}
+
+.content .tab5::after{
+    left: 83%;
+}
+
+.content .tab6::after{
+    left: 90%;
+}
+
+
+/*Banner---------------------*/
+/*banner*/
+.banner{
+ 
+    top: 100px;
+}
+.banner img{
+    width: 100%;
+    height: 50%;
+}
+/*----------------------------*/
+
+
+/*Galeria------------------------------------------*/
+
+#galeria_platos{
+    border: 2px solid #6EBF3A;
+
+    box-shadow: 0px 1px 26px 3px rgba(0,0,0,0.75);
+}
+#galeria_platos{
+    margin: 10px auto;
+    width: 80%;
+
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 150px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.galeria_img{
+    /*para que las imagenes no se distorsionen*/
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+}
+
+.galeria__titulo{
+    display: none;
+    color: #fff;
+    font-size: 15px;
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,1));
+    width: 100%;
+    margin:0;
+    padding: 10px;
+    height: 30px;
+ 
+
+
+
+}
+#galeria_platos h2{
+    text-align: center;
+    margin: 20px auto;
+    transition: all 0.5s;
+
+}
+.galeria__item img:hover{
+   
+    transform:scale(1.3);
+    
+
+    
+
+    transition: all 0.5s;
+}
+
+/*--------------------------------------*/
+/*Tarifas---------------------------------*/
+/*platos tarifgas*/
+.tarifas{
+    margin: 10px auto;
+    width: 100%;
+    background-image:url("../Img/mosaico2.gif");
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+.tarifas H1{
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    
+    color: #fff;
+}
+.tarifas__platos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    gap: 20px;
+    margin: 10px auto;
+   
+    width: 60%;   
+}
+.tarifa__columna{
+    border: 1px solid #6EBF3A;
+    padding: 15px;
+    grid-auto-columns: 50px;
+    margin-bottom: 20px;
+    color: black;
+    background: #fff;
+
+    font-family: 'Source Sans Pro';
+  
+}
+
+.tarifa__columna h2{
+    padding: 10px;
+    text-align: center;
+    
+}
+.tarifa__columna p{
+    text-align: justify;
+    font-size: 12px;
+  
+}
+
+
+.tarifa__boton{
+    display: inline-block;
+    text-decoration: none;
+   
+    height: 30px;
+    width: 190px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px auto;
+    padding: 4px;
+
+
+    background: #fff;
+    border:1.5px solid #6EBF3A;
+    color: #6EBF3A;
+    
+}
+.tarifa__boton:hover{
+    color: #fff;
+    background: #6EBF3A;
+
+}
+/*------------------------*/
+/*Pie Footer-----------------------------*/
+.footer{
+    background: #2D2C31;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+}
+.footer h2{
+    padding: 20px;
+}
+.footer p{
+    padding: 20px;
+}
+
+.header{
+    display: none;
+}
+
+/*---------------------------------------*/
+/*Responsive------------------------------*/
+@media (max-width:1118px){
+  
+
+}
+
+@media (max-width:944px){
+ 
+    
+
+}
+@media (max-width:860px){
+  
+    
+
+}
+@media(max-width:750px){
+    
+}
+@media(max-width:680px){
+    
+  
+}
+@media(max-width:580px){
+  
+    
+}
+
+
+
+
+
+
+/*----------------------------------------*/

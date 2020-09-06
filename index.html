@@ -3,21 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilo_1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilo.css">
 
-
-    <title>D'la Casa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <title>Dla Casa</title>
     <script src="./Java/modal.js"></script>
 </head>
 <body>
-<form action="./Phpdocs/guardar.php" method="POST">
-
-
-
     <input type="checkbox" id="cerrar">
     <label class="cerrar_1" for="cerrar" >x</label>
 
@@ -31,204 +23,201 @@
              <img src="./Img/food_modal.svg" alt="">
             </div>
         </div>
-     
-
-
-   <div class="menu2"></div>
-    <nav class="navegador1">
+    <div class="container">
+        <div class="lbl-menu">
+            <div class="logo">
+               
+                <img id="imagen_header" src="Img/alitas1.png" alt="">
+            </div>
+            <div class="menu">
+                <label for="radio1">Inicio</label>
+                <label for="radio2">Pedidos</label>
+                <label for="radio3">Reservas</label>
+                <label for="radio4">Registro</label>
+                <label for="radio5">Ubicanos</label>
+                <label for="radio6">Acceso</label>
+            </div>
             
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars" id="btn"></i>
-            <i class="fas fa-times" id="cancel"></i>
-        </label>
-
-       
-     
-
-        <h1 class="titulo_alitas">Alitas de la Casa</h1>
-        <img id="imagen_header" src="Img/alitas1.png" alt="">
-        <ul>
-            <li><a href="">PEDIDOS</a></li>
-            <li><a href="">RESERVAS</a></li>
-            <li><a href="#galeria_platos">GALERIA</a></li>                
-            <li><a href="#tarifa">TARIFAS</a></li>
-            <li><a href="#registro_personas">REGISTRO</a></li>
-            <li><a href="#ubicacion_restaurant">UBICANOS</a></li>
-            <li><a href="#">Acceso</a></li>
-        </ul>
-    </nav>
-    
-
-   </div>
-
-    <section  class="banner">
-       <img src="Img/Food.jpg" alt="">
-    </section>
-    <section id="galeria_platos">
-        <h2>CARTA</h2>
-        <div class="galeria">
-        <div class="galeria__item">
-            <h2 class="galeria__titulo">Imagen1</h2>
-            <img  class="galeria_img"  src="Img/carta2.jpg" alt="">
         </div>
+        <div class="content">
+            <input type="radio" name="radio" id="radio1" checked>
+            <div class="tab1">
+                <section  class="banner">
+                    <img src="/Img/Food.jpg" alt="">
+                 </section>
 
-        <div class="galeria__item">
-            <h2 class="galeria__titulo">Imagen2</h2>
-            <img  class="galeria_img"  src="./Img/carta1.jpg" alt="">
-        </div>
+                 <section id="galeria_platos">
+                    <h2>CARTA</h2>
 
-        <div class="galeria__item">
-            <h2 class="galeria__titulo">Imagen3</h2>
-        
-            <img  class="galeria_img"  src="./Img/carta3.jpg" alt="">
-        </div>
-
-        <div class="galeria__item">
-            <h2 class="galeria__titulo">Imagen4</h2>
-            <img  class="galeria_img"  src="./Img/carta4.jpg" alt="">
-        </div>
-
-        <div class="galeria__item">
-            <h2 class="galeria__titulo">Imagen5</h2>
-            <img  class="galeria_img"  src="./Img/carta6.jpg" alt="">
-         </div>
-
-        <div class="galeria__item">
-            <h2 class="galeria__titulo">Imagen6</h2>
+                    <span class="galeria">
+                    <span class="galeria__item">
+                        <h2 class="galeria__titulo">Imagen1</h2>
+                        <img  class="galeria_img"  src="/Img/carta2.jpg" alt="">
+                    </span>
             
-            <img  class="galeria_img"  src="./Img/carta7.jpg" alt="">
-         </div>
+                    <span class="galeria__item">
+                        <h2 class="galeria__titulo">Imagen2</h2>
+                        <img  class="galeria_img"  src="./Img/carta1.jpg" alt="">
+                    </span>
+            
+                    <span class="galeria__item">
+                        <h2 class="galeria__titulo">Imagen3</h2>
+                    
+                        <img  class="galeria_img"  src="./Img/carta3.jpg" alt="">
+                    </span>
+            
+                    <span class="galeria__item">
+                        <h2 class="galeria__titulo">Imagen4</h2>
+                        <img  class="galeria_img"  src="./Img/carta4.jpg" alt="">
+                    </span>
+            
+                    <span class="galeria__item">
+                        <h2 class="galeria__titulo">Imagen5</h2>
+                        <img  class="galeria_img"  src="./Img/carta6.jpg" alt="">
+                     </span>
+            
+                    <span class="galeria__item">
+                        <h2 class="galeria__titulo">Imagen6</h2>
+                        
+                        <img  class="galeria_img"  src="./Img/carta7.jpg" alt="">
+                     </span>
+            
+                    <span class="galeria__item">
+                    <h2 class="galeria__titulo">Imagen7</h2>
+                    
+                    <img  class="galeria_img"  src="./Img/carta8.jpg" alt="">
+                    </span>
+            
+                    <span class="galeria__item">
+                    <h2 class="galeria__titulo">Imagen8</h2>
+                    
+                    <img  class="galeria_img"  src="./Img/carta9.jpg" alt="">
+                    </span>
+            
+                    <span class="galeria__item">
+                    <h2 class="galeria__titulo">Imagen9</h2>
+                    
+                    <img  class="galeria_img"  src="./Img/carta10.jpg" alt="">
+                    </span>
+            
+                    <span class="galeria__item">
+                    <h2 class="galeria__titulo">Imagen10</h2>
+                    
+                    <img  class="galeria_img"  src="./Img/carta11.jpg" alt="">
+                    </span>
+            
+                    <span class="galeria__item">
+                    <h2 class="galeria__titulo">Imagen11</h2>
+                    
+                    <img  class="galeria_img"  src="./Img/carta12.jpg" alt="">
+                    </span>
+            
+                    <span class="galeria__item">
+                    <h2 class="galeria__titulo">Imagen12</h2>
+                   
+                    <img  class="galeria_img"  src="./Img/carta13.jpg" alt="">
+                     </span>
+            
+                   
+                    
+                
+                    
+                    </span>
+            
+            </section>
 
-        <div class="galeria__item">
-        <h2 class="galeria__titulo">Imagen7</h2>
-        
-        <img  class="galeria_img"  src="./Img/carta8.jpg" alt="">
+            <SECtion id="tarifa" class="tarifas">
+                <h1>TARIFAS DE PLATOS</h1>
+                <span class="tarifas__platos">
+                    <span class="tarifa__columna">
+                        <h2>Plato 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
+                        <p class="tarifa__precio">Precio: s/. 00.00</p>
+                        <a href="#" class="tarifa__boton">Realizar Pedidos</a>
+                    </span>
+                    <span class="tarifa__columna">
+                        <h2>Plato 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
+                        <p class="tarifa__precio">Precio: s/. 00.00</p>
+                        <a href="#" class="tarifa__boton">Realizar Pedidos</a>
+                    </span>
+                    <span class="tarifa__columna">
+                        <h2>Plato 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
+                        <p class="tarifa__precio">Precio: s/. 00.00</p>
+                        <a href="#" class="tarifa__boton">Realizar Pedidos</a>
+                    </span>
+                    <span class="tarifa__columna">
+                        <h2>Plato 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
+                        <p class="tarifa__precio">Precio: s/. 00.00</p>
+                        <a href="#" class="tarifa__boton">Realizar Pedidos</a>
+                    </span>
+                    <span class="tarifa__columna">
+                        <h2>Plato 5</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
+                        <p class="tarifa__precio">Precio: s/. 00.00</p>
+                        <a href="#" class="tarifa__boton">Realizar Pedidos</a>
+                    </span>
+                    <span class="tarifa__columna">
+                        <h2>Plato 6</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
+                        <p class="tarifa__precio">Precio: s/. 00.00</p>
+                        <a href="#" class="tarifa__boton">Realizar Pedidos</a>
+                    </span>
+                </span>
+            </SECtion>
+
+                <!--
+                <h2>Inicio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at atque expedita, rem repellendus asperiores itaque repellat sit veritatis soluta molestias pariatur, ut qui ipsum, sapiente hic error totam animi et! Libero eius omnis in accusamus modi officiis voluptate assumenda?</p>
+               -->
+               <footer class="footer">
+                <span class="footer_informacion">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Copyright &copy; 2020 -	Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, sapiente modi tempore aliquid nisi repellat aperiam molestiae dolore voluptatibus quaerat, vel sunt officia vitae! Deleniti fugiat eaque expedita libero est.</p>
+                </span>
+            </footer>
+            </div>
+
+            <input type="radio" name="radio" id="radio2">
+            <div class="tab2">
+                <h2>Pedidos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at atque expedita, rem repellendus asperiores itaque repellat sit veritatis soluta molestias pariatur, ut qui ipsum, sapiente hic error totam animi et! Libero eius omnis in accusamus modi officiis voluptate assumenda?</p>
+            </div>
+
+            <input type="radio" name="radio" id="radio3">
+            <div class="tab3">
+                <h2>Reservas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at atque expedita, rem repellendus asperiores itaque repellat sit veritatis soluta molestias pariatur, ut qui ipsum, sapiente hic error totam animi et! Libero eius omnis in accusamus modi officiis voluptate assumenda?</p>
+            </div>
+
+            <input type="radio" name="radio" id="radio4">
+            <div class="tab4">
+                <h2>Registro</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at atque expedita, rem repellendus asperiores itaque repellat sit veritatis soluta molestias pariatur, ut qui ipsum, sapiente hic error totam animi et! Libero eius omnis in accusamus modi officiis voluptate assumenda?</p>
+            </div>
+
+            <input type="radio" name="radio" id="radio5">
+            <div class="tab5">
+                <h2>Ubicanos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at atque expedita, rem repellendus asperiores itaque repellat sit veritatis soluta molestias pariatur, ut qui ipsum, sapiente hic error totam animi et! Libero eius omnis in accusamus modi officiis voluptate assumenda?</p>
+            </div>
+
+            <input type="radio" name="radio" id="radio6">
+            <div class="tab6">
+                <h2>Acceso Intranet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at atque expedita, rem repellendus asperiores itaque repellat sit veritatis soluta molestias pariatur, ut qui ipsum, sapiente hic error totam animi et! Libero eius omnis in accusamus modi officiis voluptate assumenda?</p>
+            </div>
         </div>
-
-        <div class="galeria__item">
-        <h2 class="galeria__titulo">Imagen8</h2>
-        
-        <img  class="galeria_img"  src="./Img/carta9.jpg" alt="">
-        </div>
-
-        <div class="galeria__item">
-        <h2 class="galeria__titulo">Imagen9</h2>
-        
-        <img  class="galeria_img"  src="./Img/carta10.jpg" alt="">
-        </div>
-
-        <div class="galeria__item">
-        <h2 class="galeria__titulo">Imagen10</h2>
-        
-        <img  class="galeria_img"  src="./Img/carta11.jpg" alt="">
-        </div>
-
-        <div class="galeria__item">
-        <h2 class="galeria__titulo">Imagen11</h2>
-        
-        <img  class="galeria_img"  src="./Img/carta12.jpg" alt="">
-        </div>
-
-        <div class="galeria__item">
-        <h2 class="galeria__titulo">Imagen12</h2>
-       
-        <img  class="galeria_img"  src="./Img/carta13.jpg" alt="">
-         </div>
-
-       
-        
-    
-        
     </div>
-
-    </section>
-    <SECtion id="tarifa" class="tarifas">
-        <h1>TARIFAS DE PLATOS</h1>
-        <div class="tarifas__platos">
-            <div class="tarifa__columna">
-                <h2>Plato 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
-                <p class="tarifa__precio">Precio: s/. 00.00</p>
-                <a href="#" class="tarifa__boton">Realizar Pedidos</a>
-            </div>
-            <div class="tarifa__columna">
-                <h2>Plato 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
-                <p class="tarifa__precio">Precio: s/. 00.00</p>
-                <a href="#" class="tarifa__boton">Realizar Pedidos</a>
-            </div>
-            <div class="tarifa__columna">
-                <h2>Plato 3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
-                <p class="tarifa__precio">Precio: s/. 00.00</p>
-                <a href="#" class="tarifa__boton">Realizar Pedidos</a>
-            </div>
-            <div class="tarifa__columna">
-                <h2>Plato 4</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
-                <p class="tarifa__precio">Precio: s/. 00.00</p>
-                <a href="#" class="tarifa__boton">Realizar Pedidos</a>
-            </div>
-            <div class="tarifa__columna">
-                <h2>Plato 5</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
-                <p class="tarifa__precio">Precio: s/. 00.00</p>
-                <a href="#" class="tarifa__boton">Realizar Pedidos</a>
-            </div>
-            <div class="tarifa__columna">
-                <h2>Plato 6</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis!</p><br>
-                <p class="tarifa__precio">Precio: s/. 00.00</p>
-                <a href="#" class="tarifa__boton">Realizar Pedidos</a>
-            </div>
-        </div>
-    </SECtion>
-    <section id="registro_personas" class="registro">
-        <div class="registro__personas">
-            <h3>REGISTRO DE USUARIOS</h3>
-       
-            <input name="nombres" type="text" placeholder="NOMBRES COMPLETOS">
-           
-            <input name="apellidos" type="text" placeholder="APELLIDOS">
-            <input name="email" type="email" placeholder="EMAIL">
-         
-            <input name="fechanacimiento" type="date" name="fecha" placeholder="FECHA DE NACIMIENTO">
-            <br>
-           <!-- <a type="submit" href="#">REGISTRAR</a>-->
-           
-           <button class="boton_registrar" type="submit"> Registrar Usuario</button>
-            
-           
-
-
-
-        </div>
-    </section>
-    <SECtion id="ubicacion_restaurant">
-        <p>UBICANOS</p>
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3446.6331268563713!2d-80.45754933000832!3d-3.569780250608055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9033f2d5e8c43e69%3A0x524b56ab0789e064!2sPlaza%20de%20Armas%20de%20Tumbes!5e0!3m2!1ses-419!2spe!4v1599011505670!5m2!1ses-419!2spe"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-       
-  
-    </SECtion>
+    <!--
     <footer class="footer">
         <div class="footer_informacion">
             <h2>Lorem ipsum dolor sit amet.</h2>
             <p>Copyright &copy; 2020 -	Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, sapiente modi tempore aliquid nisi repellat aperiam molestiae dolore voluptatibus quaerat, vel sunt officia vitae! Deleniti fugiat eaque expedita libero est.</p>
         </div>
     </footer>
- 
- 
-    <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMt7wITGIwmqbetYNnqkxWT6sSy4MNLqg&callback=initMap">
-  </script>
-
-   <!-- <script src="Java/script.js"></script>-->
-  <script src="Java/localizacion.js"></script>
-
-
-
-  </form>
+    -->
 </body>
 </html>
