@@ -107,7 +107,7 @@ body{
 .lbl-menu{
     background: #2D2C31;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50% 0;
 }
 /*columna 1 contiene el logo*/
 .lbl-menu img{
@@ -125,6 +125,35 @@ body{
     transition: all 400ms ease;
     margin-top: 25px;
 }
+
+/*se coloca el menu responsive oculto*/
+.menu_responsive{
+    display: none;
+}
+
+/*escondemos los link de responsive el menu y la x*/
+
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 35px;
+    float: right;
+    line-height: 80px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+    transition: all .5s;
+    margin-top: 15px;
+    
+}
+#check{
+    display: none;
+}
+
+
+
+
+
 .lbl-menu label:hover{
     background: #38363d
 }
@@ -366,13 +395,98 @@ body{
 /*---------------------------------------*/
 /*Responsive------------------------------*/
 @media (max-width:1118px){
-  
+    .lbl-menu label{
+      
+        font-size: 15px;
+      
+    }
+    .content div::after{
+     
+        left: 52%;
+    
+    }
+    
+    .content .tab2::after{
+        
+        left: 60%;
+    }
+    .content .tab3::after{
+        left: 67%;
+    }
+    .content .tab4::after{
+        left: 77%;
+    }
+    
+    .content .tab5::after{
+        left: 83%;
+    }
+    
+    .content .tab6::after{
+        left: 92%;
+    }
+    
 
 }
 
-@media (max-width:944px){
- 
+@media (max-width:990px){
+
+    .lbl-menu{
     
+        grid-template-columns: 80% 0 20%;
+        height: 100px;
+
+    }
+    
+    label #btn{
+        display: inline-block;
+       
+        margin-top: .1px;
+        
+        
+    }
+    label #cancel{
+        margin-top: .00001px;
+    }
+    
+    
+    .menu_responsive{
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #34333a;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1000;
+       
+    }
+    .menu_responsive label{
+        display: inline-block;
+    }
+    #check:checked ~ .menu_responsive{
+        left: 0;
+        }
+    .menu{
+        display: none;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+
+
+
+    /*eliminamos la flecha de seleccion*/
+    .content div::after{
+        display: none;
+       
+    
+    }
+ 
 
 }
 @media (max-width:860px){

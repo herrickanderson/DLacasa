@@ -147,6 +147,7 @@
     transform: scaleX(1);
     transform-origin: left;
 }
+
 label #btn,
 label #cancel{
     color: white;
